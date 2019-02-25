@@ -3,22 +3,16 @@ import javax.swing.ImageIcon;
 
 public class King extends Piece{
 
-	private ImageIcon image;
-
-	private int player;
-
-	public King(int player) {
-
-		setImageIcon("images/king1.png");
-
-		this.player = player;
-
+	public King(int player){
+		super(player, "images2/King" + player);
 	}
 
 	protected void setImageIcon(String imagePath){
 
 		ClassLoader cldr = this.getClass().getClassLoader();	
-
+public Rook(int player){
+		super(player, "images2/Rook" + player);
+	}
 		
 
 		URL imageURL = cldr.getResource(imagePath);				
