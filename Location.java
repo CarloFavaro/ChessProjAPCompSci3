@@ -27,4 +27,8 @@ public class Location {
 	public void setColumn(int c){
 		column = c;
 	}
+	
+	public boolean equals (Object o) {
+		return (o instanceof Location && ((Location)o).getRow() == getRow() && ((Location)o).getColumn() == getColumn());
+	}
 }
