@@ -4,21 +4,7 @@ import javax.swing.ImageIcon;
 public class King extends Piece{
 
 	public King(int player){
-		super(player, "images2/King" + player);
-	}
-
-	protected void setImageIcon(String imagePath){
-
-		ClassLoader cldr = this.getClass().getClassLoader();	
-public Rook(int player){
-		super(player, "images2/Rook" + player);
-	}
-		
-
-		URL imageURL = cldr.getResource(imagePath);				
-
-        image = new ImageIcon(imageURL);
-
+		super(player, "images2/King" + player + ".png");
 	}
 
 	public boolean isValidMove(Location from, Location to, Piece[][]b){
