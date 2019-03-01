@@ -1,3 +1,5 @@
+
+    
 // Project: Chess
 // Written by: Jack Shapiro, Nico, Carlo Favaro
 // Date: 2/28/19
@@ -35,10 +37,38 @@ public class GraphicsPanel extends JPanel implements MouseListener{
 		this.setFocusable(true);					 // for keylistener
 		this.addMouseListener(this);
 
-		Piece pW = new King(1);
-		Piece pB = new King(2);
-		board[2][4] = pW;
-		board[4][2] = pB;
+		board[0][0] = new Rook(1);
+		board[0][1] = new Knight(1);
+		board[0][2] = new Bishop(1);
+		board[0][3] = new Queen(1);
+		board[0][4] = new King(1);
+		board[0][5] = new Bishop(1);
+		board[0][6] = new Knight(1);
+		board[0][7] = new Rook(1);
+		board[1][0] = new Pawn(1);
+		board[1][1] = new Pawn(1);
+		board[1][2] = new Pawn(1);
+		board[1][3] = new Pawn(1);
+		board[1][4] = new Pawn(1);
+		board[1][5] = new Pawn(1);
+		board[1][6] = new Pawn(1);
+		board[1][7] = new Pawn(1);
+		board[7][0] = new Rook(2);
+		board[7][1] = new Knight(2);
+		board[7][2] = new Bishop(2);
+		board[7][3] = new Queen(2);
+		board[7][4] = new King(2);
+		board[7][5] = new Bishop(2);
+		board[7][6] = new Knight(2);
+		board[7][7] = new Rook(1);
+		board[6][0] = new Pawn(2);
+		board[6][1] = new Pawn(2);
+		board[6][2] = new Pawn(2);
+		board[6][3] = new Pawn(2);
+		board[6][4] = new Pawn(2);
+		board[6][5] = new Pawn(2);
+		board[6][6] = new Pawn(2);
+		board[6][7] = new Pawn(2);
 		// instantiate the instance variables.
 	}
 
