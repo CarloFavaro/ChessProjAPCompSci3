@@ -6,26 +6,14 @@
 import java.net.URL;
 import javax.swing.ImageIcon;
 
-public class pawn extends Piece{
+public class Pawn extends Piece{
 
 	private ImageIcon image;
 	private int player;
 
 
-
-
-
-	public pawn(int player) {
-		setImageIcon("images/pawn1.png");
-		this.player = player;
-	}
-
-	protected void setImageIcon(String imagePath){
-
-		ClassLoader cldr = this.getClass().getClassLoader();	
-		URL imageURL = cldr.getResource(imagePath);				
-		image = new ImageIcon(imageURL);
-
+	public Pawn(int player) {
+		super(player, "images2/Pawn" + player+ ".png");
 	}
 
 
