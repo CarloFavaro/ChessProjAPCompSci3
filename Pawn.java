@@ -26,7 +26,7 @@ public class Pawn extends Piece{
 
 		//if pawn is not in its first spot and move one spot up
 
-		if(getPlayer()==1 && from.getRow()!=7 && (from.getRow()==to.getRow()+1 || 
+		if(getPlayer()==1 && from.getRow()!=7 && (from.getRow()==to.getRow()-1 || 
 
 		//pawn moving diagonal top left
 
